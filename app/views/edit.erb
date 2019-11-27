@@ -3,7 +3,7 @@
   <label for="title"> Edit Title:</label>
   <input id="title" type="text" name="title" value="<%= @article.title %>">
   <label for="content">Edit Content:</label>
-  <input id="content" type="text" name="article[content]" value="<%= @article.content%>">
+  <textarea id="content" name="content" value="<%= @article.content%>"></textarea></textarea>
   <input type="submit" value="submit">
   
 </form>
