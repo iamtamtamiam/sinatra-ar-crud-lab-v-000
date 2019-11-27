@@ -38,7 +38,7 @@ class ApplicationController < Sinatra::Base
   
   patch '/articles/:id' do 
      @article = Article.find(params[:id])
-     @article = @article.update(params[:article])
+     @article.update(params[:article])
      
      
      redirect to "/articles/#{ @article.id }"
